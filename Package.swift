@@ -10,7 +10,10 @@ let package = Package(
     targets: [
         .target(
             name: "ApolloAlamofire",
-            dependencies: ["apollo", "alamofire"],
+            dependencies: [
+              .package(url: "https://github.com/apollographql/apollo-ios.git", from: "master")
+              .package(url: "https://github.com/Alamofire/Alamofire.git", from: "5.0.0-rc.2")
+            ],
             path: "ApolloAlamofire/Classes"
             
         )
