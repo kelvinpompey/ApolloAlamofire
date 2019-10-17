@@ -14,6 +14,7 @@ let package = Package(
     targets: [
         .target(
             name: "ApolloAlamofire",
+            dependencies: ["Alamofire", "Apollo"],
             path: "ApolloAlamofire/Classes"
             
         )
