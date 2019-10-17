@@ -8,7 +8,7 @@ let package = Package(
         .library(name: "ApolloAlamofire", targets: ["ApolloAlamofire"]),        
     ],
     dependencies: [
-      .package(url: "https://github.com/apollographql/apollo-ios.git", .branch("master")),
+      .package(url: "https://github.com/apollographql/apollo-ios.git", from: "0.10.1"),
       .package(url: "https://github.com/Alamofire/Alamofire.git", .exact("4.8.2"))
     ],
     targets: [
